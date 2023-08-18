@@ -1,0 +1,47 @@
+{
+  "name": "orlovtech/dadata-client",
+  "description": "Dadata Client for Laravel",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Konstantin Orlov",
+      "email": "orlovkn.job@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1|^8.2",
+    "illuminate/container": "^9.0|^10.0",
+    "illuminate/database": "^9.0|^10.0",
+    "guzzlehttp/guzzle": "^7.2"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.10",
+    "mockery/mockery": "^1.0",
+    "orchestra/testbench": "^8.0",
+    "phpunit/phpunit": "^9.0|^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OrlovTech\\DadataClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OrlovTech\\DadataClient\\Test\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OrlovTech\\DadataClient\\Providers\\DadataClientServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "pint --test",
+    "lint-fix": "pint"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
